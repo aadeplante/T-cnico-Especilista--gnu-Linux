@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Deplante — Asistencia Técnica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        body {
+            background-color: #d9c7a8;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='ruido'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23ruido)' opacity='0.08'/%3E%3C/svg%3E");
+            color: #2b2b2b;
+            line-height: 1.8;
+            padding: 20px;
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+        }
+        /* Borde animado sobre el marco de la pantalla */
+        .borde-animado {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 999;
+        }
+        .contenido {
+            position: relative;
+            z-index: 1;
+            padding: 25px;
+        }
+        .rotulo-principal {
+            background: #0055cc;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+        h1 { 
+            font-size: 1.8em; 
+            text-align: center; 
+            color: #0055cc; 
+            margin-bottom: 5px; 
+        }
+        h2 {
+            color: #0055cc;
+            margin: 25px 0 10px;
+            border-bottom: 2px solid #b8860b;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 15px;
+            color: #1a1a1a;
+        }
+        .promo {
+            background: rgba(255, 248, 220, 0.88);
+            border: 2px solid #b8860b;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin: 25px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .contacto {
+            background: rgba(255, 248, 220, 0.9);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+            border: 1px solid #b8860b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .link-contacto {
+            color: #0055cc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .link-contacto:hover {
+            color: #003380;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="bordeCanvas" class="borde-animado"></canvas>
+
+<div class="contenido">
+
+    <div class="rotulo-principal">
+        Técnico Informático • 20 Años de Experiencia • Especializado en GNU/Linux
+    </div>
+
+    <h1>Servicios de Asistencia Técnica en Informática</h1>
+    <p style="text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 30px;">Ariel Alejandro Deplante — Técnico en Informática</p>
+
+    <h2>📌 Sobre mí</h2>
+    <p>Técnico con más de 20 años de experiencia atendiendo a usuarios particulares. Revivimos equipos de 15 hasta 25 años de antigüedad, con sistemas operativos livianos y optimizados para hardware de pocos recursos. Especializado en dar nueva vida a equipos antiguos, migración a software libre y soluciones prácticas que funcionan. Servicios remotos disponibles a través de WhatsApp y AnyDesk.</p>
+
+    <div class="promo">
+        <h3 style="margin-top: 0;">🎁 PROMOCIÓN DE LANZAMIENTO</h3>
+        <p style="font-size: 1.1em; margin-top: 10px;">✨ Configuración de juegos en Linux — SIN COSTO ALGUNO ✨</p>
+        <p style="margin-top: 8px; font-weight: normal;">Te instalo y configuro las plataformas de juegos en tu equipo con Linux y te explico paso a paso cómo usarlos, sin cargo adicional. Incluye instalación de Steam, Proton, Lutris y GeForce NOW, con explicaciones claras para que aprendas a disfrutar tus juegos sin complicaciones.</p>
+    </div>
+
+    <h2>🛠️ Lo que hago</h2>
+
+    <h3>🖥️ Sistemas Operativos</h3>
+    <ul>
+        <li>Instalación, reparación y mantenimiento de Windows y GNU/Linux.</li>
+        <li>Recuperación de equipos que ya no soportan versiones nuevas de Windows.</li>
+        <li>Asesoramiento sobre la distribución de Linux que mejor se adapte a tu equipo.</li>
+    </ul>
+
+    <h3>🌐 Redes y Compartición de Archivos</h3>
+    <ul>
+        <li>Configuración de redes híbridas entre Windows y Linux.</li>
+        <li>Carpetas compartidas con Samba para acceder a tus archivos desde cualquier sistema.</li>
+    </ul>
+
+    <h3>💾 Recuperación y Rescate</h3>
+    <ul>
+        <li>USB multiboot con Ventoy para instalar sistemas operativos.</li>
+        <li>Recuperación de información, respaldos y desbloqueo de contraseñas.</li>
+    </ul>
+
+    <h3>🎮 Juegos y Entretenimiento</h3>
+    <ul>
+        <li>Optimización de equipos para juegos en Linux (Steam, Proton, Lutris, GeForce NOW).</li>
+        <li>Instalación y configuración de centros multimedia: Stremio, Kodi y Jellyfin. Jellyfin es similar a Plex pero gratuito: organiza tus películas y series con portadas y las puedes ver desde cualquier dispositivo de tu casa, como tu propia biblioteca sin cuotas mensuales.</li>
+        <li>Creación de radios online con Icecast.</li>
+    </ul>
+
+    <h3>📲 Más servicios</h3>
+    <ul>
+        <li>Automatización de instalación de programas.</li>
+        <li>Creación de aplicaciones web ligeras.</li>
+        <li>Uso de Android en Linux mediante Waydroid.</li>
+        <li>Creación de música con Inteligencia Artificial.</li>
+        <li>Enseñanza y capacitación personalizada en GNU/Linux.</li>
+    </ul>
+
+    <h2>⏰ Horario de Atención</h2>
+    <ul>
+        <li><strong>Lunes a Viernes:</strong> 7:00 am a 10:00 pm</li>
+        <li><strong>Sábados y Domingos:</strong> Disponible con cita previa</li>
+    </ul>
+
+    <div class="contacto">
+        <h2>✉️ Contacto</h2>
+        <p style="font-size: 1.25em; margin-top: 15px;">
+            📱 WhatsApp / Telegram: 
+            <a class="link-contacto" href="https://wa.me/5491127427996" target="_blank" rel="noopener noreferrer">
+                <strong>+54 11 2742 7996</strong>
+            </a>
+        </p>
+    </div>
+
+</div>
+
+<script>
+const canvas = document.getElementById('bordeCanvas');
+const ctx = canvas.getContext('2d');
+let hue = 0;
+
+function ajustarCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', ajustarCanvas);
+ajustarCanvas();
+
+function dibujarBorde() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    hue = (hue + 1) % 360;
+    const grosor = 6;
+    
+    // Marco exterior que cambia de color gradualmente
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    ctx.lineWidth = grosor;
+    ctx.strokeRect(grosor / 2, grosor / 2, canvas.width - grosor, canvas.height - grosor);
+    
+    // Marco interior desfasado en la rueda cromática
+    ctx.strokeStyle = `hsl(${(hue + 120) % 360}, 100%, 50%)`;
+    ctx.lineWidth = 2;
+    const offset = grosor + 10;
+    ctx.strokeRect(offset, offset, canvas.width - offset * 2, canvas.height - offset * 2);
+    
+    requestAnimationFrame(dibujarBorde);
+}
+
+dibujarBorde();
+</script>
+
+</body>
+</html>
